@@ -37,17 +37,18 @@ Devemos desenvolver o sistema utilizando HTML5, CSS3, JavaScript e React para cr
 
 - [x] Repositório no GitHub
 - [x] README.md contendo descrição do projeto, apresentação da equipe e descrição de funcionalidades.
+- [x] Páginas responsivas
+- [x] Utilização de API
+- [x] Consultar e exibir cursos
+- [x] Consultar e exibir POSTS
+- [x] Documentar as chamadas da API
+- [x] Refatoração do código
 
 
 ### Em desenvolvimento:
 
-- [ ] Páginas responsivas
-- [ ] Utilização de API
-- [ ] Consultar e exibir cursos
-- [ ] Consultar e exibir POSTS
 - [ ] Validação de Dados de Entrada
 - [ ] Tratamento de Erros no Processo da Chamada
-- [ ] Documentar as chamadas da API
-- [ ] Refatoração do código
+
 
 ---------
