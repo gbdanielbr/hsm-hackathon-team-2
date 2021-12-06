@@ -4,11 +4,11 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   min-height: 80vh;
-  background: #673AB7;
+  background: #eee;
 
   h1 {
     font-weight: 300;
-    color: #FFFFFF;
+    color: #673AB7;
     text-align: center;
     margin: 0;
     padding: 25px;
@@ -35,6 +35,22 @@ export const Container = styled.div`
     list-style:none;
   }
 
+table {
+  color: #673AB7;
+  width: 100%;
+  margin:auto;
+  display:flex;
+  
+}
+
+table tr {
+  text-align:left;
+}
+
+table tbody{
+  margin-left: 2rem;
+}
+
   form input {
       border-radius:15px;
       
@@ -46,7 +62,7 @@ export const Container = styled.div`
     font-weight: bold;
     font-size: .8rem;
     cursor: pointer;
-    color: #212121;
+    color: #673AB7;
     background-color: #D1C4E9;
     font-style: none;
     border-radius: .8rem;
@@ -55,7 +71,7 @@ export const Container = styled.div`
     border-style: none;
 
     &:hover{
-      color: #FFFFFF;
+      color: #673AB7  ;
       background-color: #512DA8;
     }
   }

@@ -10,10 +10,16 @@ const Post = () => {
 
   useEffect(() => {
     axios
-      .get(`https://jsonplaceholder.typicode.com/${resource}`)
+      .get(`https://test.godigibee.io/pipeline/gama/v1/gama?query=1`,  { 
+        headers: {
+        'apikey' : 'DDuHO8yqVyyUx4J1nQpNUHAFK7pUJRw3',
+        'Access-Control-Allow-Origin': '*',
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }})
       .then(res => {
         console.log(res)
-        setItems(res.data)
+        setItems(res.data.data)
       })
       .catch(err => {
         console.log(err)
@@ -21,12 +27,27 @@ const Post = () => {
   }, [resource])
   
   useEffect(() => {
+    let url;
+    if(idPost){
+      url = `https://test.godigibee.io/pipeline/gama/v1/gama?query=4;id=${idPost}`
+      
+    }else{
+      url = `https://test.godigibee.io/pipeline/gama/v1/gama?query=1`;
+    }
     axios
-      .get(`https://jsonplaceholder.typicode.com/comments/${idPost}`)
+    .get(url,
+      
+      { headers: {
+        'apikey' : 'DDuHO8yqVyyUx4J1nQpNUHAFK7pUJRw3',
+        'Access-Control-Allow-Origin': '*',
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }})
+
       .then(res => {
         console.log(res)
-        setIdPost(res.data.id)
-        setOnlyItems(res.data)
+        setOnlyItems(res.data.data);
+        setItems(res.data.data)
       })
       .catch(err => {
         console.log(err)
@@ -53,13 +74,33 @@ const Post = () => {
          <li className="onlyPost" key={onlyItems.id}>{JSON.stringify(onlyItems.name)}</li>
       </div>
 
-      <div className="button">
-        <button onClick={() => setResource('comments')}>MOSTRAR TODOS OS POST</button>
-      </div>
-      <h1>{resource}</h1>
+
       <div>
         {items.map(item => {
-          return <li key={item.id}>{JSON.stringify(item.name)}</li>
+          return (
+            <table key={item.id}>
+              <thead>
+                <th>
+                  <tr>Id</tr>
+                  <tr>Title</tr>
+                  <tr className='last'>Description</tr>
+                </th>
+              </thead>
+              
+              <tbody>
+              <tr>
+                  <td>{JSON.stringify(item.id)}</td>
+                </tr>
+                <tr>
+                  <td>{JSON.stringify(item.title)}</td>
+                </tr>
+                <tr>
+                  <td>{JSON.stringify(item.description)}</td>
+                </tr>
+              </tbody>
+            </table>
+          )
+          
         })}
       </div>
     </Container>

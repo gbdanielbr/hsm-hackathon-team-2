@@ -4,11 +4,11 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   min-height: 80vh;
-  background: #673AB7;
+  background: #eee;
 
   h1 {
     font-weight: 300;
-    color: #FFFFFF;
+    color: #673AB7;
     text-align: center;
     margin: 0;
     padding: 25px;
@@ -19,7 +19,21 @@ export const Container = styled.div`
     width: 25%;
     margin: auto;
   }
+  table {
+  color: #673AB7;
+  width: 100%;
+  margin:auto;
+  display:flex;
+  
+}
 
+table tr {
+  text-align:left;
+}
+
+table tbody{
+  margin-left: 2rem;
+}
   form {
     display: flex;
     justify-content: center;
@@ -55,7 +69,7 @@ export const Container = styled.div`
     border-style: none;
 
     &:hover{
-      color: #FFFFFF;
+      color: #673AB7;
       background-color: #512DA8;
     }
   }
