@@ -1,0 +1,25 @@
+
+The API should receive query according to the follow rule:
+
+apikey: DDuHO8yqVyyUx4J1nQpNUHAFK7pUJRw3
+
+1 - all post
+url: 
+https://test.godigibee.io/pipeline/gama/v1/gama?query=1
+
+2 - all courses
+url: https://test.godigibee.io/pipeline/gama/v1/gama?query=2
+
+3 - all classes
+url: 
+https://test.godigibee.io/pipeline/gama/v1/gama?query=3
+
+From here the request need a id, otherwise a error may occur
+
+4 - post by id
+url:
+https://test.godigibee.io/pipeline/gama/v1/gama?query=1;id=?
+5 - courses by id
+
+url:https://test.godigibee.io/pipeline/gama/v1/gama?query=5;id=?
+
