@@ -4,11 +4,12 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   min-height: 80vh;
-  background: #eee;
+  background: rgb(81,45,168);
+  background: linear-gradient(180deg, rgba(81,45,168,1) 1%, rgba(238,238,238,1) 22%);
 
   h1 {
     font-weight: 300;
-    color: #673AB7;
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 25px;
