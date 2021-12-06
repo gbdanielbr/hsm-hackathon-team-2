@@ -15,7 +15,7 @@ Devemos desenvolver o sistema utilizando HTML5, CSS3, JavaScript e React para cr
 ---------
 
 #### Instruções:
-- [ ] Clone este repositório:  *git clone https://github.com/gbdanielbr/course-management-system*
+- [ ] Clone este repositório:  *git clone https://github.com/gbdanielbr/hsm-hackathon-team-2/*
 - [ ] Instale as dependências:  *npm install*
 - [ ] Inicie a aplicação:  *npm start*
 
